@@ -1,7 +1,137 @@
-.attribution {
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  /* primary-colors */
+  --primary-purple: hsl(249, 99%, 64%);
+  --primary-purple-active: hsl(278, 94%, 30%);
+  --primary-red: hsl(0, 100%, 66%);
+
+  /* secondary-colors */
+  --secondary-white: hsl(0, 0%, 100%);
+  --secondary-ligt-gray: hsl(270, 3%, 87%);
+  --secondary-dark-gray: hsl(279, 6%, 55%);
+  --seconary-dark-purple: hsl(278, 68%, 11%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container img#desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  z-index: -1;
+}
+
+/* Right-section style */
+.container .right-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .right-section #form {
+  align-items: center;
+  justify-content: center;
+}
+
+.container .right-section #form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left-section style */
+
+/* .cards-container {
+  margin: 20px;
+  padding: 10px;
+} */
+
+.container {
+  .left-section {
+    height: 100vh;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .front-card {
+      margin-top: 100px;
+      margin-left: 30px;
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+
+      .front-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+
+        .card-details-container {
+          line-height: 50px;
+
+          .user-details {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container .left-section .front-card h2,
+.container .left-section .front-card p {
+  color: var(--secondary-white);
+  letter-spacing: 5px;
+}
+
+.container .left-section .back-card {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.container .left-section .back-card p {
+  position: absolute;
+  top: 44%;
+  right: 15%;
+  color: var(--secondary-white);
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
