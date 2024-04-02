@@ -59,23 +59,31 @@
         <form id="form" action="#">
           <div class="form-group">
             <label for="name">CARDHOLDER NAME</label>
-            <input type="text" id="name" placeholder="e.g. Jane Doe" />
+            <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
           </div>
 
           <div class="form-group">
             <label for="number">CARD NUMBER</label>
-            <input type="number" id="number" placeholder="e.g. Jane Doe" />
+            <input
+              type="text"
+              id="number"
+              placeholder="e.g. 1234 5678 9123 0000" />
           </div>
 
-          <div class="form-group">
-            <label for="date">EXP. DATE(MM/YY)</label>
-            <input type="number" placeholder="MM" />
-            <input type="number" placeholder="YY" />
-          </div>
+          <div class="inline">
+            <div class="form-group">
+              <label for="date">EXP. DATE(MM/YY)</label>
 
-          <div class="form-group">
-            <label for="cvc">CVC</label>
-            <input type="number" id="cvc" placeholder="e.g. 123" />
+              <div class="flex">
+                <input type="text" id="month" placeholder="MM" />
+                <input type="text" id="year" placeholder="YY" />
+              </div>
+            </div>
+
+            <div class="form-group cvc">
+              <label for="cvc">CVC</label>
+              <input type="text" id="cvc" placeholder="e.g. 123" />
+            </div>
           </div>
 
           <button type="submit">Confirm</button>
