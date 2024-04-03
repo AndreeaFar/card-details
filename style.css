@@ -181,6 +181,36 @@ body {
   }
 }
 
+.thank {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.thank h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.thank p {
+  font-size: 18px;
+  color: var(--secondary-dark-gray);
+}
+.thank button {
+  color: var(--secondary-white);
+  width: 100%;
+  border-radius: 6px;
+  padding: 1rem;
+  font-size: 18px;
+  background-color: var(--seconary-dark-purple);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+/* Attribution style */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -190,4 +220,46 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container img#desktop {
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  /* Left section */
+  .container .left-section {
+    height: 50vh;
+    width: 100%;
+
+    .front-card {
+      margin-top: 80px;
+      z-index: 1;
+    }
+
+    .back-card {
+      margin-top: -90px;
+    }
+  }
+
+  /* Right section */
+  .container .right-section {
+    height: 500vh;
+    width: 100%;
+
+    #form {
+      top: 100px;
+      left: 20px;
+    }
+  }
+
+  .attribution {
+    display: none;
+  }
 }
