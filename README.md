@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://interactivecardapp.netlify.app/)
+- Live Site URL: https://interactivecardapp.netlify.app/
 
 ## My process
 
