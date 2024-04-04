@@ -72,6 +72,8 @@ body {
     }
 
     .form-group {
+      margin-bottom: 10px;
+      position: relative;
       display: flex;
       flex-direction: column;
 
@@ -262,4 +264,19 @@ body {
   .attribution {
     display: none;
   }
+}
+
+/* Errors */
+
+.form-group small {
+  font-size: 9px;
+  padding-top: 10px;
+  margin-right: 5px;
+  color: var(--primary-red);
+  visibility: hidden;
+  display: block;
+}
+
+.form-group.error small {
+  visibility: visible;
 }
